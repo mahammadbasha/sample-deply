@@ -1,0 +1,30 @@
+<!-- custlogin.component.html -->
+<body>
+    <div class="navbar">
+        <a href="#">Retail Bank System</a>
+        <div class="navbar-right">
+            <a routerLink="/customer-login">Customer Login</a>
+            <a href="/bankemployee-login">Employee Login</a>
+        </div>
+    </div>
+    <!-- Your page content goes here -->
+</body>
+<div class="container">
+    <h2>Customer Login</h2>
+    
+    <!-- Login Form -->
+   <form  class="login-form" (ngSubmit)="login()">
+      
+      <div class="form-group">
+        <label for="username">CUSTOMER_ID:</label>
+        <input type="text" [(ngModel)]="custId" id="custId" name="custId" required>
+      </div>
+      <div class="form-group">
+        <label for="password">PASSWORD:</label>
+        <input type="password" [(ngModel)]="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  
+   
+  

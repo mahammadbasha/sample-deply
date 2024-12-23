@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>View Account Balance</h2>
+    <form (submit)="viewBalance()">
+      <div class="form-group">
+        <label for="accountId">Account ID</label>
+        <input type="number" class="form-control" id="accid" name="accid" [(ngModel)]="accid" required>
+      </div>
+      <button type="submit" class="btn btn-primary">View Balance</button>
+    </form>
+  
+    <div  class="mt-3">
+      <h4>Account Balance:</h4>
+      <p>YOUR CURRENT BALANCE IS :Rs.{{acc.amount}}</p>
+    </div>
+  </div>
+  

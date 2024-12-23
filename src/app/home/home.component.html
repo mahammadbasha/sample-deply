@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        /* Add some basic styling to the navigation bar */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Style the right-aligned links */
+        .navbar-right {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Retail Bank System</a>
+        <div class="navbar-right">
+            <a routerLink="/customer-login">Customer Login</a>
+            <a href="/bankemployee-login">Employee Login</a>
+        </div>
+    </div>
+    <!-- Your page content goes here -->
+</body>
+</html>

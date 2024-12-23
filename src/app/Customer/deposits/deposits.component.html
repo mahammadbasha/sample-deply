@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Deposit Money</h2>
+    <button (click)="logout()">LOG OUT</button>
+    <form (submit)="depositMoney()">
+      <div class="form-group">
+        <label for="accountId">Account ID</label>
+        <input type="number" class="form-control" id="accId" name="accId" [(ngModel)]="accId" required>
+      </div>
+      <div class="form-group">
+        <label for="amount">Deposit Amount</label>
+        <input type="number" class="form-control" id="amount" name="amount" [(ngModel)]="amount" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Deposit</button>
+    </form>
+  </div>
+  
